@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h2 {
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+/* Vùng chứa: flex container rộng 600px */
+.main {
+    display: flex;
+    width: 600px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+.main div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Mỗi div một màu */
+.main div:nth-of-type(1) {
+    background-color: coral;
+}
+
+.main div:nth-of-type(2) {
+    background-color: lightblue;
+    color: #333;
+}
+
+.main div:nth-of-type(3) {
+    background-color: khaki;
+    color: #333;
+}
+
+.main div:nth-of-type(4) {
+    background-color: pink;
+    color: #333;
+}
+
+.main div:nth-of-type(5) {
+    background-color: lightgrey;
+    color: #333;
+}
+
+/* ===== Ví dụ 1 ===== */
+.ex1 div {
+    flex-grow: 1;
+}
+
+.ex1 div:nth-of-type(2) {
+    flex-grow: 4;
+}
+
+/* ===== Ví dụ 2 ===== */
+.ex2 div {
+    width: 80px;
+}
+
+.ex2 div:nth-of-type(2) {
+    flex-grow: 1;
+}
